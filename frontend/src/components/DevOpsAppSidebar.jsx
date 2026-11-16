@@ -19,7 +19,7 @@ export function DevOpsAppSidebar({ ...props }) {
         <div className="flex h-10 items-center gap-2 px-1 group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:px-0">
           <img src="/icon.svg" alt="" className="h-6 w-6 shrink-0" />
           <span className="truncate text-sm font-semibold text-foreground group-data-[collapsible=icon]:hidden">
-            InsightOps
+            Argus
           </span>
         </div>
         <WorkspaceSwitcher />

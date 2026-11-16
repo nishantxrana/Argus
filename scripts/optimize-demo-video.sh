@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Remux the public InsightOps demo MP4 for progressive playback (faststart).
+# Remux the public Argus demo MP4 for progressive playback (faststart).
 # You manually upload the output to Azure Blob to overwrite the existing file.
 #
 # What this script does:
 #   1. Downloads the public demo MP4 (no login)
 #   2. Remuxes with ffmpeg "-movflags +faststart" so moov metadata is at the
 #      START of the file — browsers can start playing before the full download
-#   3. Writes scripts/insightops-demo-fast.mp4 for you to upload in Azure Portal
+#   3. Writes scripts/argus-demo-fast.mp4 for you to upload in Azure Portal
 #
 # Prerequisites: Docker (for ffmpeg), curl
 #
@@ -18,8 +18,8 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_URL="${1:-https://stteamtrackerprdcin.blob.core.windows.net/insightops/insightops-demo.mp4}"
-OUTPUT_FILE="${SCRIPT_DIR}/insightops-demo-fast.mp4"
-WORK_DIR="${TMPDIR:-/tmp}/insightops-video-$$"
+OUTPUT_FILE="${SCRIPT_DIR}/argus-demo-fast.mp4"
+WORK_DIR="${TMPDIR:-/tmp}/argus-video-$$"
 
 echo "==> Source: ${SOURCE_URL}"
 echo "==> Output: ${OUTPUT_FILE}"

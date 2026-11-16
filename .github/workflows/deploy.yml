@@ -1,4 +1,4 @@
-name: InsightOps Production Deployment
+name: Argus Production Deployment
 
 on:
   workflow_dispatch:

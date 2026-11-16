@@ -7,10 +7,7 @@ import { cn } from "@/lib/utils";
 export default function SignIn() {
   return (
     <>
-      <AuthHeader
-        title="Sign in to InsightOps"
-        subtitle="Enter your email and password to continue."
-      />
+      <AuthHeader title="Sign in to Argus" subtitle="Enter your email and password to continue." />
       <LoginForm />
       <p className="mt-6 text-center text-[14px] text-muted-foreground">
         No account?{" "}

@@ -46,7 +46,7 @@ export default function SecuritySection({ data, onChange }) {
           id="api-token"
           htmlFor="apiToken"
           label="External API Token"
-          description="Generate a token to allow external services to send data to InsightOps."
+          description="Generate a token to allow external services to send data to Argus."
           align="start"
         >
           <Input

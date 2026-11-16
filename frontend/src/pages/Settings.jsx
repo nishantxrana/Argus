@@ -484,7 +484,7 @@ export default function Settings() {
     return (
       <div className="space-y-6">
         <PageHeader
-          title="Welcome to InsightOps"
+          title="Welcome to Argus"
           description="Let's set up your first Azure DevOps organization"
         />
         <OrganizationsSection />

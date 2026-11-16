@@ -43,8 +43,8 @@ class EmailService {
       otp,
       title: "Verify your email",
       intro:
-        "Thanks for signing up for InsightOps. Use the verification code below to complete your registration.",
-      subject: "Your InsightOps verification code",
+        "Thanks for signing up for Argus. Use the verification code below to complete your registration.",
+      subject: "Your Argus verification code",
       type: "signup_otp",
     });
   }
@@ -55,9 +55,8 @@ class EmailService {
       name,
       otp,
       title: "Reset your password",
-      intro:
-        "We received a request to reset your InsightOps password. Use the code below to continue.",
-      subject: "Your InsightOps password reset code",
+      intro: "We received a request to reset your Argus password. Use the code below to continue.",
+      subject: "Your Argus password reset code",
       type: "password_reset_otp",
     });
   }
@@ -96,7 +95,7 @@ This code expires in 10 minutes.
 Do not share this code with anyone.
 If you did not request this, you can safely ignore this email.
 
-— InsightOps
+— Argus
 ${this.fromEmail}
     `.trim();
 
@@ -206,7 +205,7 @@ ${this.fromEmail}
   </head>
   <body>
     <div class="container">
-      <div class="brand">InsightOps</div>
+      <div class="brand">Argus</div>
   
       <h1>${title}</h1>
   
@@ -221,7 +220,7 @@ ${this.fromEmail}
       </div>
   
       <p class="hint">
-        Do not share this code with anyone. InsightOps will never ask you for it.
+        Do not share this code with anyone. Argus will never ask you for it.
       </p>
   
       <p class="hint">
@@ -229,7 +228,7 @@ ${this.fromEmail}
       </p>
   
       <div class="footer">
-        <strong>InsightOps</strong><br />
+        <strong>Argus</strong><br />
         AI-powered DevOps Intelligence<br />
         ${this.fromEmail}
       </div>

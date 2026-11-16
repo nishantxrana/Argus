@@ -28,7 +28,7 @@ const TRUST_ICONS = {
 };
 
 function injectFaqJsonLd() {
-  const id = "insightops-faq-jsonld";
+  const id = "argus-faq-jsonld";
   if (document.getElementById(id)) return;
   const script = document.createElement("script");
   script.id = id;
@@ -111,7 +111,7 @@ export default function LandingPage() {
         >
           <a href="#top" className="flex items-center gap-2 justify-self-start text-foreground">
             <img src="/icon.svg" alt="" className="size-7" width={28} height={28} />
-            <span className="text-sm font-semibold tracking-tight">InsightOps</span>
+            <span className="text-sm font-semibold tracking-tight">Argus</span>
           </a>
 
           <nav className="hidden items-center justify-center gap-6 lg:flex" aria-label="Page">
@@ -157,7 +157,7 @@ export default function LandingPage() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[min(100%,20rem)] bg-landing-canvas">
                 <SheetHeader>
-                  <SheetTitle className="text-left">InsightOps</SheetTitle>
+                  <SheetTitle className="text-left">Argus</SheetTitle>
                 </SheetHeader>
                 <nav className="mt-8 flex flex-col gap-1" aria-label="Mobile">
                   {NAV_LINKS.map((link) => (

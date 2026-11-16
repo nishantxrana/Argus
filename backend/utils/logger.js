@@ -175,7 +175,7 @@ export const logger = winston.createLogger({
   level: LOG_LEVEL,
   format: productionFormat,
   defaultMeta: {
-    service: "insightops-backend",
+    service: "argus-backend",
     environment: NODE_ENV,
   },
   transports: [

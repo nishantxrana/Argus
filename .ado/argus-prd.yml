@@ -39,11 +39,11 @@ steps:
       rootFolderOrFile: backend
       includeRootFolder: false
       archiveType: zip
-      archiveFile: "$(Build.ArtifactStagingDirectory)/insightops_production.zip"
+      archiveFile: "$(Build.ArtifactStagingDirectory)/argus_production.zip"
       replaceExistingArchive: true
 
   - task: PublishBuildArtifacts@1
     displayName: "Publish artifact"
     inputs:
-      PathtoPublish: "$(Build.ArtifactStagingDirectory)/insightops_production.zip"
-      ArtifactName: "InsightOpsArtifact_Prd"
+      PathtoPublish: "$(Build.ArtifactStagingDirectory)/argus_production.zip"
+      ArtifactName: "ArgusArtifact_Prd"

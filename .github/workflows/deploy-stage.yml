@@ -1,4 +1,4 @@
-name: InsightOps Staging Deployment
+name: Argus Staging Deployment
 
 on:
   workflow_dispatch:

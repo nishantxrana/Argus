@@ -95,7 +95,7 @@ function ArchitectureDiagram() {
       viewBox="0 0 420 160"
       className="h-auto w-full text-foreground"
       role="img"
-      aria-label="Browser connects to InsightOps API, which calls Azure DevOps. PAT never reaches the browser."
+      aria-label="Browser connects to Argus API, which calls Azure DevOps. PAT never reaches the browser."
     >
       <rect
         x="8"
@@ -146,7 +146,7 @@ function ArchitectureDiagram() {
         fontSize="12"
         fontFamily="Inter, sans-serif"
       >
-        InsightOps API
+        Argus API
       </text>
       <text
         x="230"
@@ -265,7 +265,7 @@ export default function LandingSections({ onOpenDemo }) {
               From buried signal to one view
             </h2>
             <p className="mt-3 max-w-[48ch] text-base text-muted-foreground">
-              The daily friction of Azure DevOps tabs, and how InsightOps answers it.
+              The daily friction of Azure DevOps tabs, and how Argus answers it.
             </p>
           </Reveal>
           <div className="mt-12 grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -472,8 +472,8 @@ export default function LandingSections({ onOpenDemo }) {
                   <div>
                     <p className="text-[15px] font-medium text-foreground">Read-only by design</p>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Only read scopes. InsightOps never writes work items, queues builds, or
-                      comments on PRs.
+                      Only read scopes. Argus never writes work items, queues builds, or comments on
+                      PRs.
                     </p>
                   </div>
                 </li>
@@ -493,9 +493,7 @@ export default function LandingSections({ onOpenDemo }) {
               <p className="mb-3 text-sm font-medium text-foreground">Required PAT scopes</p>
               <div className="overflow-x-auto rounded-panel border border-landing-hairline bg-landing-canvas">
                 <table className="w-full min-w-[28rem] text-left text-sm">
-                  <caption className="sr-only">
-                    Azure DevOps PAT scopes required by InsightOps
-                  </caption>
+                  <caption className="sr-only">Azure DevOps PAT scopes required by Argus</caption>
                   <thead>
                     <tr className="border-b border-landing-hairline text-muted-foreground">
                       <th scope="col" className="px-3 py-2.5 font-medium">
@@ -535,8 +533,7 @@ export default function LandingSections({ onOpenDemo }) {
                 </table>
               </div>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                No write scopes. InsightOps never creates work items, queues builds, or comments on
-                PRs.
+                No write scopes. Argus never creates work items, queues builds, or comments on PRs.
               </p>
             </Reveal>
           </div>
@@ -601,7 +598,7 @@ export function LandingFooter() {
         <div>
           <div className="flex items-center gap-2">
             <img src="/icon.svg" alt="" className="size-6" width={24} height={24} />
-            <span className="text-sm font-semibold text-foreground">InsightOps</span>
+            <span className="text-sm font-semibold text-foreground">Argus</span>
           </div>
           <p className="mt-3 max-w-[32ch] text-sm text-muted-foreground">
             Azure DevOps monitoring for engineering teams.
@@ -645,7 +642,7 @@ export function LandingFooter() {
         </div>
       </div>
       <div className="border-t border-landing-hairline">
-        <p className={cn(SHELL, "py-6 text-[13px] text-muted-foreground")}>InsightOps</p>
+        <p className={cn(SHELL, "py-6 text-[13px] text-muted-foreground")}>Argus</p>
       </div>
     </footer>
   );

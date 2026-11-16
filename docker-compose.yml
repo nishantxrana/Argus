@@ -1,5 +1,7 @@
+name: argus
+
 services:
-  insightops:
+  argus:
     build:
       context: .
       dockerfile: Dockerfile

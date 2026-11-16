@@ -3,12 +3,12 @@
 export const H1 = "Know what broke before standup.";
 
 export const SUBLINE =
-  "InsightOps is an Azure DevOps monitoring platform for engineering teams. See sprints, builds, pull requests, and releases in one dashboard, with optional AI analysis of failures.";
+  "Argus is an Azure DevOps monitoring platform for engineering teams. See sprints, builds, pull requests, and releases in one dashboard, with optional AI analysis of failures.";
 
 export const META_DESCRIPTION =
-  "InsightOps is an Azure DevOps monitoring platform for engineering teams. See sprints, builds, PRs, and releases in one dashboard, with optional AI analysis.";
+  "Argus is an Azure DevOps monitoring platform for engineering teams. See sprints, builds, PRs, and releases in one dashboard, with optional AI analysis.";
 
-export const PAGE_TITLE = "InsightOps | Azure DevOps monitoring for engineering teams";
+export const PAGE_TITLE = "Argus | Azure DevOps monitoring for engineering teams";
 
 export const TRUST_FACTS = [
   { id: "readonly", label: "Read-only PAT" },
@@ -101,7 +101,7 @@ export const STEPS = [
   {
     n: "1",
     title: "Connect an Azure DevOps organization",
-    body: "Add a read-only PAT. InsightOps stores it encrypted and calls Azure DevOps from the server.",
+    body: "Add a read-only PAT. Argus stores it encrypted and calls Azure DevOps from the server.",
   },
   {
     n: "2",
@@ -140,9 +140,9 @@ export const FAQ = [
       "Read-only scopes: Work Items (vso.work), Build (vso.build), Code (vso.code), Release (vso.release), and Project and Team (vso.project). No write scopes are required.",
   },
   {
-    question: "Does InsightOps change anything in Azure DevOps?",
+    question: "Does Argus change anything in Azure DevOps?",
     answer:
-      "No. InsightOps never creates or updates work items, queues builds, posts PR comments, or creates webhook subscriptions via the PAT. Configure ADO service hooks manually if you want realtime events.",
+      "No. Argus never creates or updates work items, queues builds, posts PR comments, or creates webhook subscriptions via the PAT. Configure ADO service hooks manually if you want realtime events.",
   },
   {
     question: "Where are PATs stored?",
@@ -152,13 +152,13 @@ export const FAQ = [
   {
     question: "Can I use several organizations?",
     answer:
-      "Yes. InsightOps supports multiple Azure DevOps organizations and projects. You switch context in the workspace switcher.",
+      "Yes. Argus supports multiple Azure DevOps organizations and projects. You switch context in the workspace switcher.",
   },
 ];
 
 export const AI_SECTION = {
   title: "Optional AI analysis. Your provider, your key.",
-  body: "Connect OpenAI, Groq, or Google Gemini under Settings. InsightOps can fall back to free models when a paid key is not configured. Monitoring works without AI.",
+  body: "Connect OpenAI, Groq, or Google Gemini under Settings. Argus can fall back to free models when a paid key is not configured. Monitoring works without AI.",
 };
 
 export const CLOSING = {

@@ -1,4 +1,4 @@
-# InsightOps
+# Argus
 
 ![Node.js](https://img.shields.io/badge/Node.js-22+-green?logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)
@@ -6,7 +6,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-green?logo=mongodb&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-4-646CFF?logo=vite&logoColor=white)
 
-**InsightOps is an AI-assisted Azure DevOps monitoring platform for engineering teams that want sprint, build, PR, and release visibility, encrypted org PATs, and multi-provider AI analysis in one dashboard.**
+**Argus is an AI-assisted Azure DevOps monitoring platform for engineering teams that want sprint, build, PR, and release visibility, encrypted org PATs, and multi-provider AI analysis in one dashboard.**
 
 ```mermaid
 flowchart LR
@@ -21,7 +21,7 @@ flowchart LR
 
 ## Who it's for
 
-DevOps and engineering teams on Azure DevOps who spend too much time digging through failed pipelines, guessing at sprint blockers, and drowning in noisy alerts. InsightOps centralizes work items, builds, pull requests, and releases, then uses AI (when you configure a provider) to summarize and diagnose—without putting Azure PATs in the browser.
+DevOps and engineering teams on Azure DevOps who spend too much time digging through failed pipelines, guessing at sprint blockers, and drowning in noisy alerts. Argus centralizes work items, builds, pull requests, and releases, then uses AI (when you configure a provider) to summarize and diagnose—without putting Azure PATs in the browser.
 
 ## Features
 
@@ -84,7 +84,7 @@ flowchart TB
 
 ## Azure DevOps PAT scopes
 
-InsightOps calls Azure DevOps as **read-only**. Create a PAT with these scopes for full functionality (org-scoped is enough):
+Argus calls Azure DevOps as **read-only**. Create a PAT with these scopes for full functionality (org-scoped is enough):
 
 | Scope (Azure DevOps UI)     | Scope ID      | Used for                                                     |
 | --------------------------- | ------------- | ------------------------------------------------------------ |
@@ -94,7 +94,7 @@ InsightOps calls Azure DevOps as **read-only**. Create a PAT with these scopes f
 | **Release → Read**          | `vso.release` | Classic releases, environments, pending approvals            |
 | **Project and Team → Read** | `vso.project` | List projects and test connection when adding an org         |
 
-**Not required:** Write scopes, Wiki, Test Plans, Analytics, Graph/Identity, Packaging, or Service Hooks manage. InsightOps does not create/update work items, queue builds, post PR comments, or create webhook subscriptions via the PAT — configure ADO service hooks manually in Azure DevOps if you want realtime events.
+**Not required:** Write scopes, Wiki, Test Plans, Analytics, Graph/Identity, Packaging, or Service Hooks manage. Argus does not create/update work items, queue builds, post PR comments, or create webhook subscriptions via the PAT — configure ADO service hooks manually in Azure DevOps if you want realtime events.
 
 **Tips:** Prefer the shortest expiry you can operate with. Use “All accessible organizations” only if one PAT must cover multiple ADO orgs.
 
@@ -146,7 +146,7 @@ Empty App Setting values are treated as unset (do not leave blank ACS/email secr
 
 ```bash
 ./scripts/optimize-demo-video.sh
-# → writes scripts/insightops-demo-fast.mp4 (gitignored)
+# → writes scripts/argus-demo-fast.mp4 (gitignored)
 # → Azure Portal: overwrite insightops/insightops-demo.mp4, Content-Type video/mp4
 ```
 
@@ -163,7 +163,7 @@ Same MP4 codec/quality; only file layout changes (`faststart` / moov first) so t
 ## Project structure
 
 ```
-InsightOps/
+Argus/
 ├── frontend/                 # React + Vite SPA
 │   └── src/pages|components|contexts|api/
 ├── backend/                  # Express API + agents

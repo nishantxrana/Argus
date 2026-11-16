@@ -53,8 +53,8 @@ function ConnectionStatus() {
       </TooltipTrigger>
       <TooltipContent className="max-w-xs">
         <p className="text-sm">
-          InsightOps API health, checked every 5 minutes. Azure DevOps connectivity is tested in
-          Settings &gt; Organizations.
+          Argus API health, checked every 5 minutes. Azure DevOps connectivity is tested in Settings
+          &gt; Organizations.
         </p>
       </TooltipContent>
     </Tooltip>
@@ -198,7 +198,7 @@ function LayoutChrome({ children }) {
               <BreadcrumbList className="flex-nowrap">
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink asChild>
-                    <Link to="/dashboard">InsightOps</Link>
+                    <Link to="/dashboard">Argus</Link>
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />

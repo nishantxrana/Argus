@@ -89,7 +89,7 @@ function MiniSidebar({ activeTab }) {
       <div className="border-b border-border p-2">
         <div className="flex items-center gap-2 px-1 py-1">
           <img src="/icon.svg" alt="" className="size-5" width={20} height={20} />
-          <span className="truncate text-xs font-semibold text-foreground">InsightOps</span>
+          <span className="truncate text-xs font-semibold text-foreground">Argus</span>
         </div>
         <button
           type="button"
@@ -592,7 +592,7 @@ export default function ProductTour() {
     <div
       className="relative overflow-hidden rounded-panel border border-landing-hairline bg-landing-surface"
       style={{ minHeight: 520 }}
-      aria-label="Sample InsightOps product preview"
+      aria-label="Sample Argus product preview"
       onPointerDown={lockUser}
       onFocusCapture={lockUser}
     >

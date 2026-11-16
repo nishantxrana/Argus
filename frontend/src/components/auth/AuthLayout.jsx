@@ -21,7 +21,7 @@ export default function AuthLayout() {
               className="inline-flex w-fit items-center gap-2.5 text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure-500/40"
             >
               <img src="/icon.svg" alt="" className="size-7" />
-              <span className="text-[15px] font-semibold tracking-tight">InsightOps</span>
+              <span className="text-[15px] font-semibold tracking-tight">Argus</span>
             </Link>
           </div>
 
@@ -44,7 +44,7 @@ export default function AuthLayout() {
           <AuthDotField />
           <div className="pointer-events-none absolute bottom-8 left-8 z-10 max-w-xs">
             <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-              InsightOps
+              Argus
             </p>
             <p className="mt-1.5 text-[15px] leading-snug text-muted-foreground">
               Clarity for engineering teams.

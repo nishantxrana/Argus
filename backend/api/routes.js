@@ -76,7 +76,7 @@ router.get("/health", async (req, res) => {
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
     serverStartTime: serverStartTime,
-    service: "Azure DevOps Monitoring InsightOps",
+    service: "Azure DevOps Monitoring Argus",
     environment: process.env.NODE_ENV,
     version: process.env.npm_package_version || "1.0.0",
   };
